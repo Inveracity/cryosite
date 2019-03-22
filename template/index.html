@@ -1,0 +1,52 @@
+{{ define "index" }}
+<!DOCTYPE html>
+<html>
+
+{{ template "header" }}
+
+<body>
+    <video playsinline autoplay muted loop poster="CRYOSPHER_GREYWCIRCLE.png" id="bgvid">
+        <source src="/static/images/test.mp4" type="video/webm">
+    </video>
+
+
+    <div class="centerContainer text-center">
+        <img src="static/images/CRYOSPHER_GREYWCIRCLE.png" style="width:1024px;height:410px;"></img>
+    </div>
+
+    <!-- <div class="container text-center">
+        <div class="row">
+            <div class="col-md">
+                One of three columns 1
+                <img src="https://picsum.photos/g/200/300"></img>
+            </div>
+            <div class="col-md">
+                One of three columns 2
+                <img src="https://picsum.photos/g/200/300"></img>
+            </div>
+            <div class="col-md">
+                One of three columns 3
+                <img src="https://picsum.photos/g/200/300"></img>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                One of three columns 4
+                <img src="https://picsum.photos/g/200/300"></img>
+            </div>
+            <div class="col-md">
+                One of three columns 5
+                <img src="https://picsum.photos/g/200/300"></img>
+            </div>
+            <div class="col-md">
+                One of three columns 6
+                <img src="https://picsum.photos/g/200/300"></img>
+            </div>
+        </div>
+    </div> -->
+
+    {{ template "footer" }}
+</body>
+
+</html>
+{{ end }}
