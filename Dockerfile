@@ -6,6 +6,6 @@ COPY . /web
 
 WORKDIR /web
 
-RUN go build main.go
+RUN go build -mod vendor main.go
 
 CMD ["./main"]

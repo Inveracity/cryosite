@@ -25,6 +25,8 @@ func main() {
 }
 
 func indexHandler(writer http.ResponseWriter, req *http.Request) {
+	writer.WriteHeader(http.StatusOK)
+	log.Println("index")
 	tmpl := template.Must(template.ParseGlob("template/*")) // Find all files in templates folder and parse them
 	err := tmpl.ExecuteTemplate(writer, "index", "sdf")     // Serve the index template
 	if err != nil {
