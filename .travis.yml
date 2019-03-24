@@ -1,0 +1,23 @@
+language: go
+
+go:
+  - 1.12.x
+
+branches:
+  only:
+    - master
+
+services:
+  - docker
+
+sudo: required
+
+before_install:
+  - docker pull inveracity/cryosite:latest
+
+script:
+  - chmod +x ci.sh
+  - ./ci.sh
+
+notifications:
+  email: false

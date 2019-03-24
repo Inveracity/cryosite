@@ -1,4 +1,4 @@
-FROM golang:1.12.0-alpine3.9
+FROM golang:1.12.1-alpine3.9
 
 RUN apk add --no-cache git build-base
 
@@ -6,6 +6,6 @@ COPY . /web
 
 WORKDIR /web
 
-RUN go build -mod vendor main.go
+RUN go build -mod vendor -o cryosite
 
-CMD ["./main"]
+CMD ["./cryosite"]
