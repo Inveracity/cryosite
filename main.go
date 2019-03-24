@@ -11,7 +11,7 @@ import (
 func main() {
 	log.Println("Starting API server")
 	staticFolder := "./static/"                        // define static content directory
-	port := "8000"                                     // Set port constant
+	port := "10020"                                    // Set port constant
 	router := mux.NewRouter()                          // Set new router
 	router.StrictSlash(false)                          // Make trailing slashes in url optional
 	assets := http.Dir(staticFolder)                   // Set asset folder as a http directory
@@ -26,7 +26,6 @@ func main() {
 
 func indexHandler(writer http.ResponseWriter, req *http.Request) {
 	writer.WriteHeader(http.StatusOK)
-	log.Println("index")
 	tmpl := template.Must(template.ParseGlob("template/*")) // Find all files in templates folder and parse them
 	err := tmpl.ExecuteTemplate(writer, "index", "sdf")     // Serve the index template
 	if err != nil {
