@@ -12,12 +12,9 @@ services:
 
 sudo: required
 
-before_install:
-  - docker pull inveracity/cryosite:latest
-
 script:
-  - chmod +x ci.sh
-  - ./ci.sh
+  - chmod +x build/ci.sh
+  - build/ci.sh
 
 notifications:
   email: false
