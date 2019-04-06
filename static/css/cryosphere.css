@@ -90,6 +90,9 @@ footer {
     background: rgba(25, 25, 25, .9);
 }
 
+a.nav-link {
+    color: white;
+}
 .nav-link {
     color: white;
 }
