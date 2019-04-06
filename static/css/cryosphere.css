@@ -78,3 +78,21 @@ footer {
 .opaque {
     background: rgba(25, 25, 25, .5);
 }
+
+.opaque-dark {
+    background: rgba(25, 25, 25, .9);
+}
+
+.nav-link {
+    color: white;
+}
+
+#socialmediaimages {
+    height: 42px;
+    width: 42px;
+}
+
+.tab-content {
+    padding-top: 15px;
+    min-height: 150px;
+}

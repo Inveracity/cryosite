@@ -1,0 +1,27 @@
+{{ define "menu" }}
+<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="shows-tab" data-toggle="tab" href="#shows" role="tab" aria-controls="shows"
+            aria-selected="true">shows</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="merch-tab" data-toggle="tab" href="#merch" role="tab" aria-controls="merch"
+            aria-selected="false">merch</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+            aria-selected="false">Contact</a>
+    </li>
+</ul>
+<div class="tab-content opaque-dark" id="myTabContent">
+    <div class="tab-pane fade show active" id="shows" role="tabpanel" aria-labelledby="shows-tab">
+        Information about shows go here
+    </div>
+    <div class="tab-pane fade" id="merch" role="tabpanel" aria-labelledby="merch-tab">
+        merch store goes here
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        cryosphereofficial@gmail.com
+    </div>
+</div>
+{{ end }}
