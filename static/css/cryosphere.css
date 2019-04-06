@@ -45,11 +45,27 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .col {
-        padding:0px;
-        margin:0px;
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .text-center {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
+
 
 .centerContainer{
     position: absolute;
@@ -62,6 +78,8 @@ footer {
 }
 
 .icons { /*icons from https://simpleicons.org/ */
+    height: 100px;
+    width: 42px;
     filter: invert(100%) sepia(1%) saturate(2834%) hue-rotate(193deg) brightness(112%) contrast(100%); /* convert hex to filter color https://codepen.io/sosuke/pen/Pjoqqp */
 }
 
@@ -95,11 +113,6 @@ a.nav-link {
 }
 .nav-link {
     color: white;
-}
-
-#socialmediaimages {
-    height: 42px;
-    width: 42px;
 }
 
 .tab-content {
