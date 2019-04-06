@@ -26,7 +26,6 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    /*background: url(/static/images/cryosphere.png) no-repeat;*/
     background-size: cover;
 }
 
@@ -58,15 +57,24 @@ footer {
 .icons { /*icons from https://simpleicons.org/ */
     filter: invert(100%) sepia(1%) saturate(2834%) hue-rotate(193deg) brightness(112%) contrast(100%); /* convert hex to filter color https://codepen.io/sosuke/pen/Pjoqqp */
 }
+
 .icons:hover{
     filter: invert(44%) sepia(97%) saturate(2458%) hue-rotate(165deg) brightness(98%) contrast(101%); /* Blue hover over */
 }
+
 .iconbar {
     z-index: 1000;
-    background: rgba(25, 25, 25, .5);
     position: relative;
     width: 100%;
     padding: 10px 0px 10px 0px;
     left: 0;
     right: 0;
+}
+
+.row {
+    margin: 0px;
+}
+
+.opaque {
+    background: rgba(25, 25, 25, .5);
 }
