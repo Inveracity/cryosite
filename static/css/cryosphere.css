@@ -45,10 +45,6 @@ footer {
     width: 100%;
 }
 
-.col-md {
-    background-color: black;
-}
-
 .centerContainer{
     position: absolute;
     width: 100px; /*the image width*/
@@ -57,4 +53,20 @@ footer {
     top: 50%;
     margin-left: -512px; /*half the image width*/
     margin-top: -205px; /*half the image height*/
+}
+
+.icons { /*icons from https://simpleicons.org/ */
+    filter: invert(100%) sepia(1%) saturate(2834%) hue-rotate(193deg) brightness(112%) contrast(100%); /* convert hex to filter color https://codepen.io/sosuke/pen/Pjoqqp */
+}
+.icons:hover{
+    filter: invert(44%) sepia(97%) saturate(2458%) hue-rotate(165deg) brightness(98%) contrast(101%); /* Blue hover over */
+}
+.iconbar {
+    z-index: 1000;
+    background: rgba(25, 25, 25, .5);
+    position: relative;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    left: 0;
+    right: 0;
 }
