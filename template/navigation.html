@@ -1,25 +1,28 @@
 {{ define "navigation" }}
 <nav class="navbar navbar-expand-lg navbar-dark opaque">
     <a class="navbar-brand" href="#"></a>
+    {{ template "socialmedia" }}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">CRYOSPHERE <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#home">CRYOSPHERE<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">SHOWS</a>
+                <a class="nav-link" href="#shows">SHOWS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">MERCH</a>
+                <a class="nav-link" href="#merch">MERCH</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">BOOKING</a>
+                <a class="nav-link" href="#contact">CONTACT</a>
             </li>
         </ul>
     </div>
 </nav>
+
 {{ end }}
