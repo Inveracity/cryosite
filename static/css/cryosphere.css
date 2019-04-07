@@ -44,29 +44,6 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 576px) {
-    .container {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .col-12 {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .text-center {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-}
-
-
 .centerContainer{
     position: absolute;
     width: 100px; /*the image width*/
@@ -78,8 +55,8 @@ footer {
 }
 
 .icons { /*icons from https://simpleicons.org/ */
-    height: 60px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     filter: invert(100%) sepia(1%) saturate(2834%) hue-rotate(193deg) brightness(112%) contrast(100%); /* convert hex to filter color https://codepen.io/sosuke/pen/Pjoqqp */
 }
 
@@ -94,6 +71,9 @@ footer {
     padding: 10px 0px 10px 0px;
     left: 0;
     right: 0;
+    display: flex;
+    box-flex: inherit;
+    flex-wrap: unset;
 }
 
 .row {
@@ -153,4 +133,31 @@ a.nav-link {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .text-center {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .icons { /*icons from https://simpleicons.org/ */
+        height: 60px;
+        width: 20px;
+        filter: invert(100%) sepia(1%) saturate(2834%) hue-rotate(193deg) brightness(112%) contrast(100%); /* convert hex to filter color https://codepen.io/sosuke/pen/Pjoqqp */
+    }
 }
