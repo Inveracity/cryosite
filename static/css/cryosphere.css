@@ -135,6 +135,14 @@ a.nav-link {
     visibility: visible;
 }
 
+.content {
+    min-height: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
 @media (max-width: 576px) {
     .container {
         padding-left: 0px;
@@ -160,12 +168,12 @@ a.nav-link {
         width: 20px;
         filter: invert(100%) sepia(1%) saturate(2834%) hue-rotate(193deg) brightness(112%) contrast(100%); /* convert hex to filter color https://codepen.io/sosuke/pen/Pjoqqp */
     }
+    .row {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
 }
 
-.content {
-    min-height: 200px;
-}
-
-.hidden {
-    display: none;
-}
