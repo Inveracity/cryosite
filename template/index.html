@@ -9,7 +9,7 @@
 
 {{ template "navigation" }}
 
-<div class="container text-center">
+<div class="container">
     <div class="row content-home">
         <div class="col">
         </div>
@@ -20,35 +20,11 @@
         </div>
     </div>
 
-    <div class="row content content-shows hidden opaque">
-        <div class="col">
-        </div>
-        <div class="col-12">
-            <p>SHOWS</p>
-        </div>
-        <div class=" col">
-        </div>
-    </div>
+    {{ template "shows" }}
 
-    <div class="row content content-merch hidden opaque">
-        <div class="col">
-        </div>
-        <div class="col-12">
-            <p>MERCH</p>
-        </div>
-        <div class=" col">
-        </div>
-    </div>
+    {{ template "merch" }}
 
-    <div class="row content content-contact hidden opaque">
-        <div class="col">
-        </div>
-        <div class="col-12">
-            <p>Send us an email</p> <br /> <p>cryosphereofficialmail@gmail.com</p>
-        </div>
-        <div class="col">
-        </div>
-    </div>
+    {{ template "contact" }}
 </div>
 
 {{ template "footer" }}
