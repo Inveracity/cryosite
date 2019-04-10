@@ -1,25 +1,31 @@
 {{ define "shows" }}
 
-    <div class="row content content-shows hidden opaque">
-        <div class="col">
-        </div>
+<div class="row content content-shows hidden opaque">
 
-        <div class="col-12">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">Date</th>
-              <th scope="col">location</th>
-              <th scope="col">tickets</th>
-            </tr>
-          </thead>
-          <tbody id="show-table">
-          </tbody>
-        </table>
-        </div>
+  <div class="col">
+  </div>
 
-        <div class=" col">
-        </div>
-    </div>
+  <div class="col-12">
+
+    <h3>SHOW DATES
+      <a href="https://songkick.com/" target="_blank">
+        <img class="songkicklogo" src="/static/images/powered-by-songkick-white.svg" /> </a>
+    </h3>
+    <table class="table table-hover table-borderless">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">City</th>
+          <th scope="col">Venue</th>
+        </tr>
+      </thead>
+      <tbody id="shows-table">
+      </tbody>
+    </table>
+  </div>
+
+  <div class=" col">
+  </div>
+</div>
 
 {{ end }}
