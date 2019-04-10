@@ -48,6 +48,10 @@ footer {
     width: 100%;
 }
 
+.col {
+    flex-grow: unset;
+}
+
 .centerContainer{
     position: absolute;
     width: 100px; /*the image width*/
@@ -148,9 +152,7 @@ a.nav-link {
 }
 
 .songkicklogo {
-    max-width:10%;
-    max-height:10%;
-    /*padding-bottom: 20px;*/
+    max-height:40px;
     filter: invert(40%) sepia(0%) saturate(2006%) hue-rotate(147deg) brightness(83%) contrast(90%);
 }
 
