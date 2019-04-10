@@ -164,6 +164,10 @@ a.nav-link {
     border: none !important;
 }
 
+.card {
+    border: unset;
+}
+
 @media (max-width: 576px) {
     .container {
         padding-left: 0px;

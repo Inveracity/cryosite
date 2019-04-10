@@ -30,7 +30,7 @@ var sample_data = {
           "start": {
             "time": "20:00:00",
             "date": "2012-04-18",
-            "datetime": "2012-04-18T20:00:00-0800"
+            "datetime": "----------T--:--:-------"
           },
           "performance": [
             {
@@ -47,13 +47,13 @@ var sample_data = {
             }
           ],
           "location": {
-            "city": "San Francisco, CA, US",
+            "city": "---------------------",
             "lng": -122.4332937,
             "lat": 37.7842398
           },
           "venue": {
             "id": 6239,
-            "displayName": "The Fillmore",
+            "displayName": "------------",
             "uri": "http://www.songkick.com/venues/6239-fillmore?utm_source=PARTNER_ID&utm_medium=partner",
             "lng": -122.4332937,
             "lat": 37.7842398,
