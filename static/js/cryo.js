@@ -1,3 +1,5 @@
+var hash = location.hash.substr(1);
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip({
     animated: 'fade',
@@ -7,13 +9,26 @@ $(function () {
 })
 
 
+// Sets and unsets the hidden class to show and hide content
+function content_change(content_name) {
+  console.log("changing content to " + content_name)
+  $('.content-' + content_name).siblings().addClass('hidden');
+  $('.content-' + content_name).removeClass('hidden');
+}
+
+// Change contents based on hash values in url
+$(function () {
+  if (hash != "") {
+    content_change(hash);
+  }
+});
+
 // Hide and Display content when pressing the navigation links
 $(function () {
   $('ul.navbar-nav a').on('click', function () {
     $navlinkclass = $(this).attr('class');
     $content = $navlinkclass.split(" ")[1]; // This is a poor way to get the class name, but it works for now
-    $('.content-' + $content).siblings().addClass('hidden');
-    $('.content-' + $content).removeClass('hidden');
+    content_change($content);
   });
 });
 
