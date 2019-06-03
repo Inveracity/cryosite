@@ -151,10 +151,12 @@ a.nav-link {
     display: none;
 }
 
+/*
 .songkicklogo {
     max-height:40px;
     filter: invert(40%) sepia(0%) saturate(2006%) hue-rotate(147deg) brightness(83%) contrast(90%);
 }
+*/
 
 .table thead th{
     border: none !important;
@@ -166,6 +168,15 @@ a.nav-link {
 
 .card {
     border: unset;
+}
+
+.about p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+em#aboutcenter {
+    text-align: center;
 }
 
 @media (max-width: 576px) {
