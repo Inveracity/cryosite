@@ -11,12 +11,12 @@ $(function () {
 
 // Sets and unsets the hidden class to show and hide content
 function content_change(content_name) {
-  console.log("changing content to " + content_name)
   $('.content-' + content_name).siblings().addClass('hidden');
   $('.content-' + content_name).removeClass('hidden');
 }
 
 // Change contents based on hash values in url
+// This enables sending direct links to specific content
 $(function () {
   if (hash != "") {
     content_change(hash);
@@ -37,6 +37,11 @@ var sample_data = {
   "resultsPage": {
     "results": {
       "event": [
+        {
+          "start": { "datetime": "2019-06-08" },
+          "location": { "city": "Copenhagen" },
+          "venue": { "displayName": "Emergenza @ Pumpehuset" }
+        },
         {
           "start": { "datetime": "2019-09-14" },
           "location": { "city": "Rønne" },
