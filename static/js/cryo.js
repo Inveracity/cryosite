@@ -1,3 +1,4 @@
+
 var hash = location.hash.substr(1);
 
 $(function () {
@@ -69,6 +70,7 @@ $(document).ready(function () {
   var events = data.resultsPage.results.event
 
   $.each(events, function (i, event) {
+
     $('table tr:last')
       .after(`
       <tr>
@@ -78,5 +80,34 @@ $(document).ready(function () {
       </tr>
       `
       );
+    if (date_has_passed(event.start.datetime) == true) {
+      $('table tr:last').addClass("strikeout")
+    }
+
   })
 });
+
+
+// Check whether a live show date has passed, returns a boolean
+function date_has_passed(event_date) {
+  // Convert event date to an integer for easy comparison
+  edate = event_date.replace(/-/g, "")
+  var intdate = parseInt(edate)
+
+  // Get the current date
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var yyyy = today.getFullYear();
+
+  today = yyyy + mm + dd;
+  // Convert current date to an integer for easy comparison
+  var current = parseInt(today)
+
+  if (current > intdate) {
+    return true
+  }
+  else {
+    return false
+  }
+}
