@@ -38,57 +38,22 @@ var sample_data = {
     "results": {
       "event": [
         {
-          "id": 11129128,
-          "type": "Concert",
-          "uri": "http://www.songkick.com/concerts/11129128-wild-flag-at-fillmore?utm_source=PARTNER_ID&utm_medium=partner",
-          "displayName": "Wild Flag at The Fillmore (April 18, 2012)",
-          "start": {
-            "time": "20:00:00",
-            "date": "2012-04-18",
-            "datetime": "----------T--:--:-------"
-          },
-          "performance": [
-            {
-              "artist": {
-                "id": 29835,
-                "uri": "http://www.songkick.com/artists/29835-wild-flag?utm_source=PARTNER_ID&utm_medium=partner",
-                "displayName": "Wild Flag",
-                "identifier": []
-              },
-              "id": 21579303,
-              "displayName": "Wild Flag",
-              "billingIndex": 1,
-              "billing": "headline"
-            }
-          ],
-          "location": {
-            "city": "---------------------",
-            "lng": -122.4332937,
-            "lat": 37.7842398
-          },
-          "venue": {
-            "id": 6239,
-            "displayName": "------------",
-            "uri": "http://www.songkick.com/venues/6239-fillmore?utm_source=PARTNER_ID&utm_medium=partner",
-            "lng": -122.4332937,
-            "lat": 37.7842398,
-            "metroArea": {
-              "id": 26330,
-              "uri": "http://www.songkick.com/metro_areas/26330-us-sf-bay-area?utm_source=PARTNER_ID&utm_medium=partner",
-              "displayName": "SF Bay Area",
-              "country": { "displayName": "US" },
-              "state": { "displayName": "CA" }
-            }
-          },
-          "status": "ok",
-          "popularity": 0.012763
+          "start": { "datetime": "2019-09-14" },
+          "location": { "city": "Rønne" },
+          "venue": { "displayName": "Raise Your Horns @ Musikhuzet" }
+        },
+        {
+          "start": { "datetime": "2019-06-01" },
+          "location": { "city": "Copenhagen" },
+          "venue": { "displayName": "Beta, Amager Bio" }
+        },
+        {
+          "start": { "datetime": "2019-02-01" },
+          "location": { "city": "Roskilde" },
+          "venue": { "displayName": "Gimle" }
         },
       ]
-    },
-    "totalEntries": 24,
-    "perPage": 50,
-    "page": 1,
-    "status": "ok"
+    }
   }
 }
 
