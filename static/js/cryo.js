@@ -39,14 +39,14 @@ var sample_data = {
     "results": {
       "event": [
         {
-          "start": { "datetime": "2019-06-08" },
-          "location": { "city": "Copenhagen" },
-          "venue": { "displayName": "Emergenza @ Pumpehuset" }
-        },
-        {
           "start": { "datetime": "2019-09-14" },
           "location": { "city": "Rønne" },
           "venue": { "displayName": "Raise Your Horns @ Musikhuzet" }
+        },
+        {
+          "start": { "datetime": "2019-06-08" },
+          "location": { "city": "Copenhagen" },
+          "venue": { "displayName": "Emergenza @ Pumpehuset" }
         },
         {
           "start": { "datetime": "2019-06-01" },
