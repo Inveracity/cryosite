@@ -189,6 +189,10 @@ tr.strikeout td:before {
     width: 100%;
 }
 
+.col-12.twitter {
+    margin-top: 10px;
+}
+
 @media (max-width: 576px) {
     .container {
         padding-left: 0px;
