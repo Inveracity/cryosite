@@ -9,7 +9,7 @@ I stopped practicing drums actively by the age of 17 to become a vocalist in a d
 I joined CRYOSPHERE in August 2018 after they had been looking for a new drummer for some time.
 Had it not been for my friend to push me to try auditioning for the band I probably never would have played drums again for the rest of my life.
 
-<img src="https://i.imgur.com/D1L9pPT.jpg" width="70%" height="70%" align="center"/>
+<img src="https://i.imgur.com/D1L9pPT.jpg" width="70%" height="70%" align="center"/><br />
 
 #### Auditioning for the band
 

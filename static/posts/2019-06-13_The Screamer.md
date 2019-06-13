@@ -4,7 +4,7 @@
 
 Hi, I'm Anders!
 
-<img src="https://i.imgur.com/wVUXiTB.jpg" width="70%" height="70%" align="center"/>
+<img src="https://i.imgur.com/wVUXiTB.jpg" width="70%" height="70%" align="center"/><br />
 
 #### Auditioning
 I was in another band with Emil before we both became part of CRYOSPHERE. That band ended up disbanding. In that time Emil had secretly joined CRYOSPHERE without telling me!
