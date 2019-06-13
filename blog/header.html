@@ -1,0 +1,51 @@
+{{ define "header" }}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <title> Cryosphere </title>
+
+    <link rel="icon" href="../../static/images/favicon.ico" type="image/png" sizes="128x128">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Raleway" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/bootstrap4.css">
+    <link href="../../static/css/cryosphere.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <nav
+        class="navbar navbar-expand-lg navbar-dark opaque border border-light border-top-0 border-left-0 border-right-0">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-center">
+
+                <li class="nav-item active">
+                    <a class="nav-link home" href="/blog">
+                        <span>&#8249;</span>
+                        BLOGS<span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link home" href="/">
+                        HOME <span>&#8250;</span>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {{ end }}

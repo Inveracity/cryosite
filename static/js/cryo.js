@@ -33,7 +33,6 @@ $(function () {
   });
 });
 
-
 var sample_data = {
   "resultsPage": {
     "results": {
@@ -71,7 +70,7 @@ $(document).ready(function () {
 
   $.each(events, function (i, event) {
 
-    $('table tr:last')
+    $('#shows tr:last')
       .after(`
       <tr>
           <td>${event.start.datetime.split('T')[0]}</td>
@@ -81,7 +80,7 @@ $(document).ready(function () {
       `
       );
     if (date_has_passed(event.start.datetime) == true) {
-      $('table tr:last').addClass("strikeout")
+      $('#shows tr:last').addClass("strikeout")
     }
 
   })
@@ -111,3 +110,33 @@ function date_has_passed(event_date) {
     return false
   }
 }
+
+// Render the blog post giving it the path to the file location
+function render_blog_post(path_to_post) {
+  var href = window.location.origin
+  var url = href + "/" + path_to_post
+  $.ajax({
+    url: url,
+    type: 'GET',
+    success: function (data) {
+      $('#content').html(marked(data));
+    },
+    error: function () {
+      $('#content').html(marked("# *could not find post*"));
+    }
+  });
+};
+
+function render_linked_blog_post() {
+  var href = window.location.origin
+  var post = window.location.hash.replace("#", "")
+  render_blog_post("/static/posts/" + post + ".md")
+}
+
+// Render the blog post when clicking a direct link to a post
+$(document).ready(function () {
+  var post = window.location.href
+  if (post.includes("/blog/post#")) {
+    render_linked_blog_post()
+  }
+});

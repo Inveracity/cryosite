@@ -1,0 +1,21 @@
+{{ define "index" }}
+
+{{ template "header" }}
+
+{{ template "banner" }}
+
+<div class="container">
+    <div class="row content">
+        <div class="col">
+        </div>
+        <div class="col-12">
+            {{ template "navigation" .}}
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
+
+{{ template "footer" }}
+
+{{ end }}
