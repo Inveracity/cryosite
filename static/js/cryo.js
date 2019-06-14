@@ -40,7 +40,7 @@ var sample_data = {
         {
           "start": { "datetime": "2019-07-25" },
           "location": { "city": "Copenhagen" },
-          "venue": { "displayName": "Crazy Town @ Rust" }
+          "venue": { "displayName": "Crazy Town X @ Rust" }
         },
         {
           "start": { "datetime": "2019-09-14" },
