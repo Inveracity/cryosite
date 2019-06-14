@@ -38,6 +38,11 @@ var sample_data = {
     "results": {
       "event": [
         {
+          "start": { "datetime": "2019-07-25" },
+          "location": { "city": "Copenhagen" },
+          "venue": { "displayName": "Crazy Town @ Rust" }
+        },
+        {
           "start": { "datetime": "2019-09-14" },
           "location": { "city": "Rønne" },
           "venue": { "displayName": "Raise Your Horns @ Musikhuzet" }
