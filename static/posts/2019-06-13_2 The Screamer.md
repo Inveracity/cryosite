@@ -1,10 +1,12 @@
+<div class="post-content">
+
 # Meet the band: The Screamer
 
 <em> posted on the 13th of June 2019 </em>
 
 Hi, I'm Anders!
 
-<img src="https://i.imgur.com/wVUXiTB.jpg" width="70%" height="70%" align="center"/><br />
+![](https://i.imgur.com/wVUXiTB.jpg)
 
 #### Auditioning
 I was in another band with Emil before we both became part of CRYOSPHERE. That band ended up disbanding. In that time Emil had secretly joined CRYOSPHERE without telling me!
@@ -17,3 +19,5 @@ I thought I might as well try it out!
 The audition went great and Sirene and the guys were pleased with my performance and asked me to join the band.
 
 The songs I performed were "Laid to Rest" by Lamb of God and "The Lines" by Beartooth.
+
+</div>

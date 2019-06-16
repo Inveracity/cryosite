@@ -1,4 +1,8 @@
+<div class="post-content">
+
 # Meet the Band: The Bassist
+
+<em> posted on the 13th of June 2019 </em>
 
 Asger on bass!
 
@@ -7,7 +11,7 @@ just switched to bass a year ago. I have played guitar from the age of 15 and al
 I am currently just finding my place in the mix and I am finding a good spot beneath and with our rythm guitarist.
 The synergy between rythm guitar, drums and bass is exciting!
 
-<img src="https://i.imgur.com/KpTmgLp.jpg" width="70%" height="70%" align="center"/><br />
+![](https://i.imgur.com/KpTmgLp.jpg)
 
 #### History
 
@@ -23,3 +27,5 @@ I hope by practicing sound engineering, that I get a better understanding about 
 We all have multiple jobs in the band and I just love our individual passion and initiative.
 
 Last but not least I am a carpenter by profession and by so I am building odd stage probs for live use. Stay tuned on our social media to see what I am talking about!
+
+</div>

@@ -1,3 +1,5 @@
+<div class="post-content">
+
 # Meet the band: The Drummer
 
 <em> posted on the 13th of June 2019 </em>
@@ -9,7 +11,7 @@ I stopped practicing drums actively by the age of 17 to become a vocalist in a d
 I joined CRYOSPHERE in August 2018 after they had been looking for a new drummer for some time.
 Had it not been for my friend to push me to try auditioning for the band I probably never would have played drums again for the rest of my life.
 
-<img src="https://i.imgur.com/D1L9pPT.jpg" width="70%" height="70%" align="center"/><br />
+![](https://i.imgur.com/D1L9pPT.jpg)
 
 #### Auditioning for the band
 
@@ -21,3 +23,5 @@ On the day of the audition I sat down in front of a drumkit for the first time i
 #### Other facts
 
 I wrote all the code for this website, you can find the source code here [github.com/inveracity/cryosite](https://github.com/Inveracity/cryosite)
+
+</div>

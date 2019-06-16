@@ -117,25 +117,29 @@ function date_has_passed(event_date) {
 }
 
 // Render the blog post giving it the path to the file location
-function render_blog_post(path_to_post) {
+function render_blog_post(path_to_post, callback) {
   var href = window.location.origin
   var url = href + "/" + path_to_post
   $.ajax({
     url: url,
     type: 'GET',
     success: function (data) {
-      $('#content').html(marked(data));
+      callback(data);
     },
     error: function () {
-      $('#content').html(marked("# *could not find post*"));
+      callback("# *could not find post*");
     }
   });
 };
 
 function render_linked_blog_post() {
-  var href = window.location.origin
-  var post = window.location.hash.replace("#", "")
-  render_blog_post("/static/posts/" + post + ".md")
+
+  function callback(data) {
+    $('#content').html(marked(data))
+  };
+  var href = window.location.origin;
+  var post = window.location.hash.replace("#", "");
+  render_blog_post("/static/posts/" + post + ".md", callback);
 }
 
 // Render the blog post when clicking a direct link to a post
@@ -145,3 +149,25 @@ $(document).ready(function () {
     render_linked_blog_post()
   }
 });
+
+// Get all blog mosts meta data
+function get_all_blog_posts(callback) {
+  var url = window.location.origin + "/api/blog/all"
+  $.get({
+    url: url,
+    error: function () {
+      console.log("error")
+    }
+  }).done(function (data, textStatus, jqXHR) {
+    callback(data);
+  });
+};
+
+function render_all_blogs_posts(data) {
+  function callback(data) {
+
+    $("#all-posts").append(marked(data))
+  }
+
+  get_all_blog_posts(callback)
+}

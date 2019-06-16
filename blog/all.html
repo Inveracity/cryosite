@@ -1,0 +1,22 @@
+{{ define "all" }}
+
+<div class="container">
+    <div class="row content">
+        <div class="col-1">
+        </div>
+        <div class="col-10">
+            <script>
+                $(document).ready(function () {
+                    get_all_blog_posts(render_all_blogs_posts)
+                });
+            </script>
+            <div id="all-posts"></div>
+        </div>
+        <div class="col-1">
+        </div>
+    </div>
+</div>
+
+{{ template "footer" }}
+
+{{ end }}
