@@ -38,14 +38,24 @@ var sample_data = {
     "results": {
       "event": [
         {
-          "start": { "datetime": "2019-07-25" },
-          "location": { "city": "Copenhagen" },
-          "venue": { "displayName": "Crazy Town X @ Rust" }
+          "start": { "datetime": "2019-08-31" },
+          "location": { "city": "Roskilde" },
+          "venue": { "displayName": "Live fra undergrunden" }
+        },
+        {
+          "start": { "datetime": "2019-09-01" },
+          "location": { "city": "Aarhus" },
+          "venue": { "displayName": "Headroom Festival" }
         },
         {
           "start": { "datetime": "2019-09-14" },
           "location": { "city": "Rønne" },
           "venue": { "displayName": "Raise Your Horns @ Musikhuzet" }
+        },
+        {
+          "start": { "datetime": "2019-07-25" },
+          "location": { "city": "Copenhagen" },
+          "venue": { "displayName": "Crazy Town X @ Rust" }
         },
         {
           "start": { "datetime": "2019-06-08" },
